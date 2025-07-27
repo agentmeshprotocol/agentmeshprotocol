@@ -1,10 +1,8 @@
 # Agent Mesh Protocol
 
-[![Documentation](https://img.shields.io/badge/docs-live-brightgreen)](https://docs.agentmeshprotocol.io)
-[![Python SDK](https://img.shields.io/pypi/v/agent-mesh-protocol.svg)](https://pypi.org/project/agent-mesh-protocol/)
-[![TypeScript SDK](https://img.shields.io/npm/v/@agentmeshprotocol/sdk.svg)](https://www.npmjs.com/package/@agentmeshprotocol/sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Discord](https://img.shields.io/discord/1234567890?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/agentmeshprotocol)
+[![Protocol Version](https://img.shields.io/badge/AMP-v1.0-blue)](docs/protocol-specification.md)
+[![GitHub Stars](https://img.shields.io/github/stars/agentmeshprotocol/agentmeshprotocol?style=social)](https://github.com/agentmeshprotocol/agentmeshprotocol)
 
 **A standardized protocol for autonomous AI agent communication and collaboration across frameworks.**
 
@@ -99,29 +97,24 @@ graph LR
 
 ## 📚 Documentation
 
-### Getting Started
-- **[Introduction](https://docs.agentmeshprotocol.io/docs/getting-started/introduction)** - What is Agent Mesh Protocol?
-- **[Installation](https://docs.agentmeshprotocol.io/docs/getting-started/installation)** - Set up your development environment
-- **[Quick Start](https://docs.agentmeshprotocol.io/docs/getting-started/quick-start)** - Build your first agent mesh in 10 minutes
-- **[Your First Agent](https://docs.agentmeshprotocol.io/docs/getting-started/first-agent)** - Detailed agent creation guide
-- **[Basic Concepts](https://docs.agentmeshprotocol.io/docs/getting-started/basic-concepts)** - Core AMP concepts
+### Core Documentation
+- **[Protocol Specification](docs/protocol-specification.md)** - Complete AMP protocol specification
+- **[Capability Taxonomy](docs/capability-taxonomy.md)** - Standardized agent capability definitions
+- **[Implementation Guide](docs/implementation-guide.md)** - Step-by-step implementation guide
+- **[Security Guidelines](docs/SECURITY.md)** - Security best practices and guidelines
 
-### Framework Integration
-- **[LangChain Integration](https://docs.agentmeshprotocol.io/docs/guides/frameworks/langchain)** - Add AMP to LangChain agents
-- **[CrewAI Integration](https://docs.agentmeshprotocol.io/docs/guides/frameworks/crewai)** - Enable crew collaboration
-- **[AutoGen Integration](https://docs.agentmeshprotocol.io/docs/guides/frameworks/autogen)** - Enhance AutoGen conversations
-- **[Custom Framework](https://docs.agentmeshprotocol.io/docs/guides/frameworks/custom)** - Build your own integration
+### SDKs and Examples
+- **[Python SDK](https://github.com/agentmeshprotocol/amp-python-sdk)** - Official Python implementation
+- **[TypeScript SDK](https://github.com/agentmeshprotocol/amp-typescript-sdk)** - Official TypeScript implementation
+- **[Examples Repository](https://github.com/agentmeshprotocol/amp-examples)** - Code examples and tutorials
+- **[Community Resources](https://github.com/agentmeshprotocol/amp-community)** - Community contributions
 
-### API Reference
-- **[Protocol Specification](https://docs.agentmeshprotocol.io/docs/api/protocol/message-format)** - Complete protocol documentation
-- **[Python SDK](https://docs.agentmeshprotocol.io/docs/api/python/)** - Python API reference
-- **[TypeScript SDK](https://docs.agentmeshprotocol.io/docs/api/typescript/)** - TypeScript API reference
-- **[REST API](https://docs.agentmeshprotocol.io/docs/api/rest/)** - HTTP REST API documentation
+### Reference Implementations
+- **[Python Reference](src/README.md)** - Python reference implementation
+- **[TypeScript Reference](src/README.md)** - TypeScript reference implementation
+- **[Validation Tools](tests/README.md)** - Protocol compliance testing tools
+- **[Example Implementations](examples/README.md)** - Complete working examples
 
-### Examples and Tutorials
-- **[Basic Examples](https://docs.agentmeshprotocol.io/docs/examples/basic/)** - Simple agent implementations
-- **[Real-world Applications](https://docs.agentmeshprotocol.io/docs/examples/applications/)** - Production-ready examples
-- **[Integration Patterns](https://docs.agentmeshprotocol.io/docs/examples/patterns/)** - Common architectural patterns
 
 ## 🏗️ Repository Structure
 
@@ -130,22 +123,16 @@ This repository contains the core protocol specification and reference implement
 ```
 agentmeshprotocol/
 ├── docs/                    # Protocol documentation
-│   ├── specification.md     # Core protocol specification
-│   ├── capability-taxonomy.md  # Standardized capability definitions
-│   ├── security.md          # Security guidelines
-│   └── examples/            # Protocol usage examples
+│   ├── protocol-specification.md  # Core AMP protocol specification
+│   ├── capability-taxonomy.md     # Standardized capability definitions
+│   ├── implementation-guide.md    # Implementation guidelines
+│   └── SECURITY.md               # Security guidelines
 ├── src/                     # Reference implementations
-│   ├── python/             # Python reference implementation
-│   ├── typescript/         # TypeScript reference implementation
-│   └── schemas/            # JSON schemas for validation
+│   └── README.md           # Implementation details
 ├── tests/                   # Protocol compliance tests
-│   ├── validation/         # Schema and semantic validation
-│   ├── interop/           # Interoperability tests
-│   └── security/          # Security testing
-└── examples/               # Complete example implementations
-    ├── basic/             # Simple examples
-    ├── frameworks/        # Framework-specific examples
-    └── production/        # Production-ready examples
+│   └── README.md           # Testing guidelines
+└── examples/               # Example implementations
+    └── README.md           # Example catalog
 ```
 
 ## 🔧 Related Repositories
@@ -224,21 +211,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🌟 Community and Support
 
 ### Get Help
-- **💬 Discord** - [Join our community server](https://discord.gg/agentmeshprotocol)
-- **📚 Documentation** - [docs.agentmeshprotocol.io](https://docs.agentmeshprotocol.io)
-- **❓ Stack Overflow** - Tag questions with `agent-mesh-protocol`
+- **📚 Documentation** - [Protocol Specification](docs/protocol-specification.md)
 - **🐛 GitHub Issues** - [Report bugs and request features](https://github.com/agentmeshprotocol/agentmeshprotocol/issues)
+- **💬 Discussions** - [Join the conversation](https://github.com/agentmeshprotocol/amp-community/discussions)
 
 ### Stay Updated
-- **🐦 Twitter** - [@agentmeshproto](https://twitter.com/agentmeshproto)
-- **📧 Newsletter** - [Subscribe for updates](https://newsletter.agentmeshprotocol.io)
-- **📝 Blog** - [Technical articles and tutorials](https://blog.agentmeshprotocol.io)
-- **🎥 YouTube** - [Video tutorials and demos](https://youtube.com/@agentmeshprotocol)
+- **📖 GitHub** - Watch this repository for updates
+- **🤝 Community** - [Community resources](https://github.com/agentmeshprotocol/amp-community)
 
-### Enterprise Support
-For enterprise support, custom integrations, and consulting services:
-- **📧 Email** - enterprise@agentmeshprotocol.io
-- **🏢 Enterprise Portal** - [enterprise.agentmeshprotocol.io](https://enterprise.agentmeshprotocol.io)
 
 ## 🚀 Roadmap
 
@@ -260,12 +240,12 @@ For enterprise support, custom integrations, and consulting services:
 - [ ] Advanced workflow orchestration
 - [ ] Enterprise governance features
 
-See our [public roadmap](https://roadmap.agentmeshprotocol.io) for detailed planning and progress updates.
+See our [public roadmap](https://github.com/agentmeshprotocol/amp-community/blob/main/ROADMAP.md) for detailed planning and progress updates.
 
 ---
 
 **Ready to build the future of agent collaboration?** 
 
-[Get Started](https://docs.agentmeshprotocol.io/docs/getting-started) • [Join Discord](https://discord.gg/agentmeshprotocol) • [View Examples](https://docs.agentmeshprotocol.io/docs/examples)
+[Read Specification](docs/protocol-specification.md) • [View Examples](https://github.com/agentmeshprotocol/amp-examples) • [Join Community](https://github.com/agentmeshprotocol/amp-community/discussions)
 
 *Agent Mesh Protocol - Making AI agent interoperability simple, secure, and scalable.*
