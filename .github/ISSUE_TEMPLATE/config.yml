@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://docs.agentmeshprotocol.io
+    about: Check our comprehensive documentation before reporting issues
+  - name: 💬 Community Discussions
+    url: https://github.com/orgs/agentmeshprotocol/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 🔒 Private Security Report
+    url: https://github.com/agentmeshprotocol/agentmeshprotocol/security/advisories/new
+    about: Report security vulnerabilities privately (recommended for sensitive issues)
+  - name: 📧 Email Support
+    url: mailto:support@agentmeshprotocol.io
+    about: Contact us directly for urgent issues or questions
+  - name: 🚀 Feature Roadmap
+    url: https://github.com/orgs/agentmeshprotocol/projects
+    about: View our roadmap and planned features

@@ -1,0 +1,264 @@
+name: Framework Integration Request
+description: Request support for a new AI framework or improvement to existing framework integration
+title: "[FRAMEWORK] "
+labels: ["framework-integration", "enhancement", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for requesting framework integration! AMP aims to support all major AI frameworks.
+        
+        Before submitting:
+        - Check our [supported frameworks](https://docs.agentmeshprotocol.io/frameworks) list
+        - Review our [integration guide](https://docs.agentmeshprotocol.io/integration-guide)
+        - Search existing issues for this framework
+
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Request Type
+      description: What type of framework integration is this?
+      options:
+        - New framework support
+        - Improve existing integration
+        - Fix framework compatibility issue
+        - Add framework-specific features
+        - Update for new framework version
+    validations:
+      required: true
+
+  - type: input
+    id: framework-name
+    attributes:
+      label: Framework Name
+      description: Name of the AI framework
+      placeholder: "e.g., LangChain, CrewAI, AutoGen, etc."
+    validations:
+      required: true
+
+  - type: input
+    id: framework-version
+    attributes:
+      label: Framework Version
+      description: Version(s) to support
+      placeholder: "e.g., 0.1.0, ^1.2.0, latest"
+    validations:
+      required: true
+
+  - type: input
+    id: framework-url
+    attributes:
+      label: Framework URL
+      description: Link to the framework's repository or website
+      placeholder: "https://github.com/framework/repo"
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Programming Language
+      description: Primary language for this framework
+      options:
+        - Python
+        - TypeScript/JavaScript
+        - Java
+        - C#/.NET
+        - Go
+        - Rust
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: framework-description
+    attributes:
+      label: Framework Description
+      description: Brief description of the framework and its purpose
+      placeholder: |
+        What does this framework do?
+        What are its key features?
+        What use cases does it solve?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: popularity
+    attributes:
+      label: Framework Popularity
+      description: How popular/widely used is this framework?
+      options:
+        - Very Popular (>10k GitHub stars)
+        - Popular (1k-10k GitHub stars)
+        - Growing (<1k GitHub stars)
+        - Niche/Specialized
+        - Internal/Private
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: integration-scope
+    attributes:
+      label: Integration Scope
+      description: What aspects of the framework need AMP integration?
+      placeholder: |
+        - Agent creation and management
+        - Message handling
+        - Capability registration
+        - Event handling
+        - Tool/function calling
+        - Memory management
+        - Async/sync operations
+      value: |
+        - [ ] Agent creation and management
+        - [ ] Message handling
+        - [ ] Capability registration
+        - [ ] Event handling
+        - [ ] Tool/function calling
+        - [ ] Memory management
+        - [ ] Async/sync operations
+    validations:
+      required: true
+
+  - type: textarea
+    id: framework-concepts
+    attributes:
+      label: Framework-Specific Concepts
+      description: Key concepts or patterns unique to this framework
+      placeholder: |
+        - How does the framework structure agents?
+        - What are its core abstractions?
+        - How does it handle communication?
+        - Any unique patterns or conventions?
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Specific use cases that would benefit from AMP integration
+      placeholder: |
+        1. Multi-agent collaboration scenarios
+        2. Cross-framework communication needs
+        3. Enterprise integration requirements
+        4. Specific industry applications
+
+  - type: textarea
+    id: technical-requirements
+    attributes:
+      label: Technical Requirements
+      description: Technical considerations for integration
+      placeholder: |
+        - Dependencies and requirements
+        - Runtime environment needs
+        - Performance considerations
+        - Security requirements
+        - Compatibility constraints
+
+  - type: textarea
+    id: existing-solutions
+    attributes:
+      label: Existing Solutions
+      description: Current solutions or workarounds (if any)
+      placeholder: |
+        - How do users currently achieve similar functionality?
+        - What are the limitations of existing approaches?
+        - Any unofficial integrations or adapters?
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Integration Complexity
+      description: How complex do you think this integration would be?
+      options:
+        - Simple (straightforward adapter)
+        - Moderate (some framework-specific handling)
+        - Complex (significant custom implementation)
+        - Very Complex (major protocol extensions needed)
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: example-usage
+    attributes:
+      label: Example Usage
+      description: Show how AMP integration would look for this framework
+      placeholder: |
+        ```python
+        # Example of desired AMP integration
+        from amp_framework_adapter import AMPFrameworkAgent
+        
+        agent = AMPFrameworkAgent(
+            framework_config=...,
+            amp_config=...
+        )
+        
+        # Usage example
+        ```
+      render: markdown
+
+  - type: dropdown
+    id: maintenance
+    attributes:
+      label: Maintenance Commitment
+      description: Framework maintenance and support expectations
+      options:
+        - Active development (frequent updates)
+        - Stable (infrequent updates)
+        - Maintenance mode (bug fixes only)
+        - Unclear/Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: community-support
+    attributes:
+      label: Community and Support
+      description: Information about the framework's community and support
+      placeholder: |
+        - Size and activity of community
+        - Official support channels
+        - Documentation quality
+        - Response to issues/PRs
+
+  - type: input
+    id: timeline
+    attributes:
+      label: Desired Timeline
+      description: When would you like to see this integration available?
+      placeholder: "e.g., Next release, Q2 2024, When possible"
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to implement this integration
+        - label: I would be willing to help with testing
+        - label: I would be willing to provide expertise on the framework
+        - label: I can help maintain the integration long-term
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
+      placeholder: |
+        - Links to relevant documentation
+        - Similar integrations in other projects
+        - Specific challenges or considerations
+        - Community interest or demand
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have checked that this framework is not already supported
+          required: true
+        - label: I have searched existing issues for this framework
+          required: true
+        - label: I have provided sufficient information about the framework
+          required: true
+        - label: I understand this may require significant development effort
+          required: true
