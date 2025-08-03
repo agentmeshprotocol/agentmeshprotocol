@@ -1,0 +1,195 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for the Agent Mesh Protocol
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Please fill out the form below to help us understand your request.
+        
+        Before submitting:
+        - Check our [roadmap](https://github.com/orgs/agentmeshprotocol/projects) for planned features
+        - Search existing issues to avoid duplicates
+        - Review our [protocol specification](https://docs.agentmeshprotocol.io/protocol) for context
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story
+      description: Describe the feature as a user story
+      placeholder: "As a [type of user], I want [goal] so that [benefit]"
+      value: "As a [type of user], I want [goal] so that [benefit]"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve?
+      placeholder: |
+        - Current limitation or pain point
+        - Why existing solutions don't work
+        - Impact on users or use cases
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution in detail
+      placeholder: |
+        - High-level approach
+        - Key components or changes needed
+        - How it integrates with existing AMP features
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-category
+    attributes:
+      label: Feature Category
+      description: Which area of AMP does this feature relate to?
+      options:
+        - Protocol Specification
+        - Message Format/Types
+        - Capability System
+        - Transport Layer
+        - Security/Authentication
+        - Framework Integration
+        - SDK/API
+        - Validation/Testing
+        - Documentation
+        - Tooling/CLI
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - Low (nice to have)
+        - Medium (would improve experience)
+        - High (significantly improves functionality)
+        - Critical (blocks important use cases)
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define specific, measurable criteria for when this feature is complete
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: Describe specific scenarios where this feature would be used
+      placeholder: |
+        1. Use case 1: [scenario description]
+        2. Use case 2: [scenario description]
+        3. Use case 3: [scenario description]
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What alternative solutions have you considered?
+      placeholder: |
+        - Alternative 1: [description, pros/cons]
+        - Alternative 2: [description, pros/cons]
+        - Why the proposed solution is preferred
+
+  - type: textarea
+    id: implementation-notes
+    attributes:
+      label: Implementation Considerations
+      description: Technical considerations for implementation (optional)
+      placeholder: |
+        - API changes needed
+        - Backward compatibility concerns
+        - Performance implications
+        - Security considerations
+        - Testing requirements
+
+  - type: dropdown
+    id: breaking-change
+    attributes:
+      label: Breaking Change
+      description: Would this feature require breaking changes to the protocol or API?
+      options:
+        - "No - Backward compatible"
+        - "Maybe - Needs analysis"
+        - "Yes - Breaking change required"
+        - "Unknown"
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact-assessment
+    attributes:
+      label: Impact Assessment
+      description: How would this feature impact different aspects of AMP?
+      placeholder: |
+        **Users**: [impact on end users]
+        **Developers**: [impact on AMP developers]
+        **Framework Maintainers**: [impact on framework integration]
+        **Protocol Evolution**: [impact on future protocol development]
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples and Mockups
+      description: Provide examples, code snippets, or mockups
+      placeholder: |
+        ```json
+        // Example message format
+        {
+          "protocol": "AMP/1.0",
+          "message": {
+            // example usage
+          }
+        }
+        ```
+      render: markdown
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to implement this feature
+        - label: I would be willing to help with documentation
+        - label: I would be willing to help with testing
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      options:
+        - label: I have searched existing issues for duplicates
+          required: true
+        - label: I have reviewed the current protocol specification
+          required: true
+        - label: I have provided clear acceptance criteria
+          required: true
+        - label: I have considered the impact on existing implementations
+          required: true

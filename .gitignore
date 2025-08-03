@@ -1,0 +1,290 @@
+# Agent Mesh Protocol - Main Repository .gitignore
+# This repository contains the core protocol specification, reference implementations,
+# and validation tools for the Agent Mesh Protocol
+
+# ==============================================================================
+# Python Artifacts (Reference Implementations & Validation Tools)
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller - usually these files are written by a python script
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# ==============================================================================
+# Protocol Development Artifacts
+# ==============================================================================
+
+# Generated schema files (if auto-generated)
+generated/
+auto-generated/
+
+# Protocol validation reports
+validation-reports/
+*.validation-report
+*.compliance-report
+
+# Test artifacts specific to protocol testing
+protocol-test-results/
+interop-test-logs/
+
+# Performance benchmarking results
+benchmarks/results/
+*.benchmark
+performance-logs/
+
+# Temporary protocol files during development
+*.tmp.json
+*.draft.json
+temp-protocol/
+
+# ==============================================================================
+# Documentation Build Artifacts
+# ==============================================================================
+
+# Sphinx documentation
+docs/_build/
+docs/build/
+.doctrees/
+
+# MkDocs
+site/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# ==============================================================================
+# IDE and Editor Files
+# ==============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.un~
+Session.vim
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ==============================================================================
+# Operating System Files
+# ==============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# Environment and Configuration Files
+# ==============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# Configuration files with sensitive data
+config.local.json
+secrets.json
+*.secret
+*.private
+
+# ==============================================================================
+# Logs and Temporary Files
+# ==============================================================================
+
+# Log files
+*.log
+logs/
+log/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary directories
+tmp/
+temp/
+.tmp/
+
+# ==============================================================================
+# Security and Compliance
+# ==============================================================================
+
+# Security scan results
+security-reports/
+*.security-scan
+vulnerability-reports/
+
+# Compliance check results
+compliance-checks/
+*.compliance-log
+
+# ==============================================================================
+# Version Control and Deployment
+# ==============================================================================
+
+# Git specific (additional patterns)
+*.orig
+*.rej
+
+# Backup files
+*.bak
+*.backup
+
+# Archive files (unless specifically needed)
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# ==============================================================================
+# Project Specific Exclusions
+# ==============================================================================
+
+# Draft protocol versions (work in progress)
+drafts/
+wip/
+
+# Local development overrides
+local-config/
+dev-overrides/
+
+# Example configurations that might contain sensitive data
+examples/config/
+examples/secrets/
+
+# Generated reference documentation
+ref-docs/generated/
+
+# Test data that shouldn't be committed
+test-data/generated/
+test-fixtures/dynamic/
